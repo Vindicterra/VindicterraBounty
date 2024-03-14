@@ -1,0 +1,4 @@
+name: VindicterraBounty
+version: '${version}'
+main: org.vindicterra.vindicterrabounty.VindicterraBounty
+api-version: 1.20
