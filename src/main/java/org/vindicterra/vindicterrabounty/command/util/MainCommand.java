@@ -20,11 +20,11 @@ public class MainCommand implements CommandExecutor, TabExecutor {
 
     //TODO: Add configurable settings for main commands
 
-    public MainCommand(String name) {
+    public MainCommand(String name, VindicterraBounty plugin) {
         setCommandName(name);
-        plugin = VindicterraBounty.getInstance();
+        this.plugin = plugin;
 
-        plugin.getCommand(name).setExecutor(this);
+        this.plugin.getCommand(name).setExecutor(this);
     }
     protected void registerSubCommand(String name, SubCommand subCommand) {
         subCommands.put(name, subCommand);

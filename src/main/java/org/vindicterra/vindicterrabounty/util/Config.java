@@ -10,9 +10,9 @@ public class Config {
     private static Config instance;
     private VindicterraBounty plugin;
     private FileConfiguration configFile;
-    public Config() {
+    public Config(VindicterraBounty plugin) {
         instance = this;
-        plugin = VindicterraBounty.getInstance();
+        this.plugin = plugin;
         configFile = plugin.getConfig();
     }
     public static Config getInstance() {

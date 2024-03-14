@@ -5,6 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.vindicterra.vindicterrabounty.VindicterraBounty;
 import org.vindicterra.vindicterrabounty.command.subcommands.AddBountyCommand;
 import org.vindicterra.vindicterrabounty.command.util.MainCommand;
 
@@ -12,8 +13,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BountyMainCommand extends MainCommand implements CommandExecutor {
-    public BountyMainCommand() {
-        super("bounty");
+    public BountyMainCommand(VindicterraBounty plugin) {
+        super("bounty", plugin);
 
         registerSubCommand("add", new AddBountyCommand());
     }

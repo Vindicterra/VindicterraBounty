@@ -3,3 +3,7 @@ version: '${version}'
 main: org.vindicterra.vindicterrabounty.VindicterraBounty
 author: SparksCool
 api-version: 1.20
+commands:
+  bounty:
+    aliases: [b]
+    description: The Bounty Plugin Command
