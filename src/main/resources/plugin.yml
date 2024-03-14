@@ -1,4 +1,5 @@
 name: VindicterraBounty
 version: '${version}'
 main: org.vindicterra.vindicterrabounty.VindicterraBounty
+author: SparksCool
 api-version: 1.20

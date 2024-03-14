@@ -1,0 +1,15 @@
+commands:
+  bounty:
+    description: "Set a bounty on a player"
+    permission: "bounty.command.bounty"
+    usage: "/bounty <player> <amount>"
+    aliases: ["b"]
+    subcommands:
+      add:
+        name: "add"
+        description: "Add a bounty to a player"
+        permission: "bounty.command.bounty.add"
+        playerOnly: true
+        usage: "/bounty add <player> <amount>"
+        aliases: ["a"]
+        requiredArgs: 2
